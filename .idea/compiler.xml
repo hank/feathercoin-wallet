@@ -6,6 +6,8 @@
       <directory url="file://$PROJECT_DIR$/sample-integration-android/target/generated-sources/r" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/wallet/target/generated-sources/r" includeSubdirectories="true" />
       <directory url="file://$PROJECT_DIR$/wallet/gen-external-apklibs/com.actionbarsherlock_library_4.1.0/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/sample-integration-android/target/generated-sources/aidl" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/wallet/target/generated-sources/aidl" includeSubdirectories="true" />
     </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>

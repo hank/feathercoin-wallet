@@ -24,6 +24,7 @@ import java.io.Reader;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.RoundingMode;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.text.NumberFormat;
@@ -172,8 +173,8 @@ public class ExchangeRatesProvider extends ContentProvider
         // Keep the BTC rate around for a bit
         Double btcRate = 0.0;
 		try {
-            String currencies[] = {"USD", "BTC", "RUR"};
-            String urls[] = {"https://btc-e.com/api/2/14/ticker", "https://btc-e.com/api/2/10/ticker", "https://btc-e.com/api/2/ltc_rur/ticker"};
+/*          String currencies[] = {"USD", "BTC", "RUR"};
+            String urls[] = {"https://btc-e.com/api/2/ftc_btc/ticker", "https://btc-e.com/api/2/10/ticker", "https://btc-e.com/api/2/ltc_rur/ticker"};
             for(int i = 0; i < currencies.length; ++i) {
                 final String currencyCode = currencies[i];
                 final URL URL = new URL(urls[i]);
@@ -202,16 +203,72 @@ public class ExchangeRatesProvider extends ContentProvider
                     if (reader != null)
                         reader.close();
                 }
+            }*/
+            // Handle FTC/USD special since we have to do maths
+            URL URL = null;
+            try {
+                URL = new URL("https://btc-e.com/api/2/ftc_btc/ticker");
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
             }
-            // Handle FTC/EUR special since we have to do maths
-            final URL URL = new URL("https://btc-e.com/api/2/btc_eur/ticker");
-            final URLConnection connection = URL.openConnection();
+            URLConnection connection = URL.openConnection();
             connection.setConnectTimeout(TIMEOUT_MS);
             connection.setReadTimeout(TIMEOUT_MS);
             connection.connect();
-            final StringBuilder content = new StringBuilder();
+            StringBuilder content = new StringBuilder();
 
             Reader reader = null;
+            try
+            {
+                reader = new InputStreamReader(new BufferedInputStream(connection.getInputStream(), 1024));
+                IOUtils.copy(reader, content);
+                final JSONObject head = new JSONObject(content.toString());
+                JSONObject ticker = head.getJSONObject("ticker");
+                Double avg = ticker.getDouble("avg");
+                // This is feathercoins priced in bitcoins
+                btcRate = avg;
+                String s_avg = String.format("%.4f", avg).replace(',', '.');
+                rates.put("BTC", new ExchangeRate("BTC", Utils.toNanoCoins(s_avg), URL.getHost()));
+            } finally
+            {
+                if (reader != null)
+                    reader.close();
+            }
+            // Handle FTC/USD special since we have to do maths
+            URL = null;
+            URL = new URL("https://btc-e.com/api/2/btc_usd/ticker");
+            connection = URL.openConnection();
+            connection.setConnectTimeout(TIMEOUT_MS);
+            connection.setReadTimeout(TIMEOUT_MS);
+            connection.connect();
+            content = new StringBuilder();
+
+            reader = null;
+            try
+            {
+                reader = new InputStreamReader(new BufferedInputStream(connection.getInputStream(), 1024));
+                IOUtils.copy(reader, content);
+                final JSONObject head = new JSONObject(content.toString());
+                JSONObject ticker = head.getJSONObject("ticker");
+                Double avg = ticker.getDouble("avg");
+                // This is bitcoins priced in dollars.  We want FTC!
+                avg *= btcRate;
+                String s_avg = String.format("%.4f", avg).replace(',', '.');
+                rates.put("USD", new ExchangeRate("USD", Utils.toNanoCoins(s_avg), URL.getHost()));
+            } finally
+            {
+                if (reader != null)
+                    reader.close();
+            }
+            // Handle FTC/BTC special since we have to do maths
+            URL = new URL("https://btc-e.com/api/2/btc_eur/ticker");
+            connection = URL.openConnection();
+            connection.setConnectTimeout(TIMEOUT_MS);
+            connection.setReadTimeout(TIMEOUT_MS);
+            connection.connect();
+            content = new StringBuilder();
+
+            reader = null;
             try
             {
                 reader = new InputStreamReader(new BufferedInputStream(connection.getInputStream(), 1024));

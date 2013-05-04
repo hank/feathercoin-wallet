@@ -72,8 +72,8 @@ public class Constants
 	public static final String PEER_DISCOVERY_IRC_CHANNEL_PROD = "#feathercoin";
 	public static final String PEER_DISCOVERY_IRC_CHANNEL_TEST = "#feathercoinTEST3";
 
-	private static final String BLOCKEXPLORER_BASE_URL_PROD = "http://explorer.feathercoin.net/";
-	private static final String BLOCKEXPLORER_BASE_URL_TEST = "http://explorer.feathercoin.net/";
+	private static final String BLOCKEXPLORER_BASE_URL_PROD = "http://cryptocoinexplorer.com:5750/chain/Feathercoin";
+	private static final String BLOCKEXPLORER_BASE_URL_TEST = "http://cryptocoinexplorer.com:5750/chain/Feathercoin";
 	public static final String BLOCKEXPLORER_BASE_URL = TEST ? BLOCKEXPLORER_BASE_URL_TEST : BLOCKEXPLORER_BASE_URL_PROD;
 
 	public static final String MIMETYPE_TRANSACTION = "application/x-ltctx";
@@ -99,7 +99,7 @@ public class Constants
 	public static final int FTC_PRECISION = 8;
 	public static final int LOCAL_PRECISION = 4;
 
-	public static final String DONATION_ADDRESS = "LerikguvK4nTvhk5XUp8ofg2JgLqAGnBV3";
+	public static final String DONATION_ADDRESS = "6xZLkkeMF5mXrfiM5g4yR5153e4QVfaSeF";
 	public static final String REPORT_EMAIL = "ralree@gmail.com";
 	public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
 	public static final String REPORT_SUBJECT_CRASH = "Crash report";
@@ -109,7 +109,7 @@ public class Constants
 	public static final String BINARY_URL = "https://github.com/hank/feathercoin-wallet";
 	public static final String CREDITS_LITECOINJ_URL = "http://code.google.com/p/feathercoinj/";
 	public static final String CREDITS_ZXING_URL = "http://code.google.com/p/zxing/";
-	public static final String CREDITS_ICON_URL = "http://forum.feathercoin.net/index.php?topic=1134.0";
+	public static final String CREDITS_ICON_URL = "https://bitcointalk.org/index.php?topic=181443.msg1928890#msg1928890";
 	public static final String AUTHOR_TWITTER_URL = "https://twitter.com/#!/bitcoins4life";
 	public static final String AUTHOR_GOOGLEPLUS_URL = "https://profiles.google.com/hardware.hank";
 	public static final String MARKET_APP_URL = "market://details?id=%s";

@@ -74,7 +74,7 @@ Next, you need to build litecoinj. In your workspace, use
 	cd litecoinj
 	mvn clean install
 
-Finally, you can build Litecoin Wallet and sign it with your development key. Again in your workspace,
+Finally, you can build Feathercoin Wallet and sign it with your development key. Again in your workspace,
 use
 
 	git clone https://code.google.com/p/litecoin-wallet/ litecoin-wallet
@@ -115,7 +115,7 @@ If you see loads of "should be tagged with @Override" errors, set
 
 NFC (Near field communication)
 
-Litecoin Wallet supports reading Litecoin requests via NFC, either from a passive NFC tag or from
+Feathercoin Wallet supports reading Feathercoin requests via NFC, either from a passive NFC tag or from
 another NFC capable Android device that is requesting coins.
 
 For this to work, just enable NFC in your phone and hold your phone to the tag or device (with
@@ -129,19 +129,19 @@ Instructions for preparing an NFC tag with your address:
 
 - Some tags have less than 50 bytes capacity, those won't work. 1 KB tags recommended.
 
-- The tag needs to contain a Litecoin URI. You can construct one with the "Request coins" dialog,
+- The tag needs to contain a Feathercoin URI. You can construct one with the "Request coins" dialog,
   then share with messaging or email. You can also construct the URI manually. Example for Prodnet:
   litecoin:1G2Y2jP5YFZ5RGk2PXaeWwbeA5y1ZtFhoL
 
 - The type of the message needs to be URI or URL (not Text).
 
 - If you put your tag at a public place, don't forget to enable write protect. Otherwise, someone
-  could overwrite the tag with his own Litecoin address.
+  could overwrite the tag with his own Feathercoin address.
 
 
 EXCHANGE RATES
 
-Litecoin Wallet reads this feed from "litecoin charts" for getting exchange rates:
+Feathercoin Wallet reads this feed from "litecoin charts" for getting exchange rates:
 
 	http://litecoincharts.com/t/weighted_prices.json
 
@@ -153,7 +153,7 @@ I chose this feed because it is not dependent on a single exchange. However, you
 mind it's always a 24h average (falling back to 7d or even 30d if no trade occurred for a long
 time).
 
-If Litecoincharts is not available, the feed from "Blockchain" is fetched instead:
+If Feathercoincharts is not available, the feed from "Blockchain" is fetched instead:
 
 	https://blockchain.info/ticker
 
@@ -164,6 +164,6 @@ The feed is described here:
 
 LITECOINJ
 
-Litecoin Wallet uses litecoinj for Litecoin specific logic:
+Feathercoin Wallet uses litecoinj for Feathercoin specific logic:
 
 http://code.google.com/p/litecoinj/

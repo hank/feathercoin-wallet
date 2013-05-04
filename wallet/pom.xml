@@ -7,10 +7,10 @@
 	<artifactId>wallet</artifactId>
 	<packaging>apk</packaging>
 	<version>1.09</version>
-	<name>Litecoin Wallet</name>
+	<name>Feathercoin Wallet</name>
 
 	<parent>
-		<groupId>de.schildbach.wallet.litecoin</groupId>
+		<groupId>de.schildbach.wallet.feathercoin</groupId>
 		<artifactId>base</artifactId>
 		<version>1</version>
 	</parent>
@@ -49,16 +49,16 @@
 			<type>apklib</type>
 		</dependency>
 
-		<!-- com.google.litecoin.* -->
+		<!-- com.google.feathercoin.* -->
 		<dependency>
 			<groupId>com.google</groupId>
-			<artifactId>litecoinj</artifactId>
+			<artifactId>feathercoinj</artifactId>
 			<version>0.81-SNAPSHOT</version>
 		</dependency>
 
-		<!-- de.schildbach.wallet.litecoin.integration.android.* -->
+		<!-- de.schildbach.wallet.feathercoin.integration.android.* -->
 		<dependency>
-			<groupId>de.schildbach.wallet.litecoin</groupId>
+			<groupId>de.schildbach.wallet.feathercoin</groupId>
 			<artifactId>integration-android</artifactId>
 			<version>1.0</version>
 		</dependency>

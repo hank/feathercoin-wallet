@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="de.schildbach.wallet.litecoin"
+	package="de.schildbach.wallet.feathercoin"
 	android:installLocation="preferExternal"
 	android:versionCode="10010"
 	android:versionName="1.09" >
@@ -81,7 +81,7 @@
 			<intent-filter android:label="@string/send_coins_activity_title" >
 				<action android:name="android.intent.action.VIEW" />
 
-				<data android:scheme="litecoin" />
+				<data android:scheme="feathercoin" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 				<category android:name="android.intent.category.BROWSABLE" />
@@ -89,7 +89,7 @@
 			<intent-filter android:label="@string/send_coins_activity_title" >
 				<action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
-				<data android:scheme="litecoin" />
+				<data android:scheme="feathercoin" />
 
 				<category android:name="android.intent.category.DEFAULT" />
 			</intent-filter>
@@ -159,16 +159,16 @@
 
 		<provider
 			android:name=".AddressBookProvider"
-			android:authorities="de.schildbach.wallet.litecoin.address_book"
+			android:authorities="de.schildbach.wallet.feathercoin.address_book"
 			android:exported="false" />
 		<provider
 			android:name=".ExchangeRatesProvider"
-			android:authorities="de.schildbach.wallet.litecoin.exchange_rates"
+			android:authorities="de.schildbach.wallet.feathercoin.exchange_rates"
 			android:exported="false" />
 
 		<receiver
 			android:name=".WalletBalanceWidgetProvider"
-			android:label="Litecoin Wallet Balance" >
+			android:label="Feathercoin Wallet Balance" >
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>

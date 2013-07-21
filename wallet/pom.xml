@@ -6,7 +6,7 @@
 
 	<artifactId>wallet</artifactId>
 	<packaging>apk</packaging>
-	<version>1.09</version>
+	<version>1.093</version>
 	<name>Feathercoin Wallet</name>
 
 	<parent>
@@ -53,7 +53,7 @@
 		<dependency>
 			<groupId>com.google</groupId>
 			<artifactId>feathercoinj</artifactId>
-			<version>0.81-SNAPSHOT</version>
+			<version>0.93-SNAPSHOT</version>
 		</dependency>
 
 		<!-- de.schildbach.wallet.feathercoin.integration.android.* -->
@@ -162,16 +162,20 @@
 				    <phase>package</phase>
 				    <inherited>true</inherited>
 				    <configuration>
-					<removeExistingSignatures>true</removeExistingSignatures>
-					<archiveDirectory/>
-					<includes>
-					    <include>${project.build.directory}/${project.artifactId}.apk</include>
-					</includes>
-					<keystore>${sign.keystore}</keystore>
-					<alias>${sign.alias}</alias>
-					<storepass>${sign.storepass}</storepass>
-					<keypass>${sign.keypass}</keypass>
-					<verbose>true</verbose>
+                        <arguments>
+                          <argument>-sigalg</argument><argument>MD5withRSA</argument>
+                          <argument>-digestalg</argument><argument>SHA1</argument>
+                        </arguments>
+                        <removeExistingSignatures>true</removeExistingSignatures>
+                        <archiveDirectory/>
+                        <includes>
+                            <include>${project.build.directory}/${project.artifactId}.apk</include>
+                        </includes>
+                        <keystore>${sign.keystore}</keystore>
+                        <alias>${sign.alias}</alias>
+                        <storepass>${sign.storepass}</storepass>
+                        <keypass>${sign.keypass}</keypass>
+                        <verbose>true</verbose>
 				    </configuration>
 				</execution>
 			    </executions>

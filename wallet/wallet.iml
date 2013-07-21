@@ -33,10 +33,20 @@
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/idea-classes" />
     <output-test url="file://$MODULE_DIR$/target/idea-test-classes" />
-    <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/target/generated-sources/r" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/target/generated-sources/combined-assets" />
+      <excludeFolder url="file://$MODULE_DIR$/target/generated-sources/combined-resources" />
+      <excludeFolder url="file://$MODULE_DIR$/target/generated-sources/extracted-dependencies" />
+      <excludeFolder url="file://$MODULE_DIR$/target/idea-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/target/idea-test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/target/libs" />
+      <excludeFolder url="file://$MODULE_DIR$/target/maven-archiver" />
+      <excludeFolder url="file://$MODULE_DIR$/target/maven-status" />
+      <excludeFolder url="file://$MODULE_DIR$/target/proguard" />
+      <excludeFolder url="file://$MODULE_DIR$/target/unpack" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.android:android:4.0.1.2" level="project" />
@@ -51,7 +61,7 @@
     <orderEntry type="library" scope="PROVIDED" name="Maven: com.google.android:annotations:4.1.1.4" level="project" />
     <orderEntry type="library" name="Maven: com.google.android:support-v4:r7" level="project" />
     <orderEntry type="library" name="Maven: com.actionbarsherlock:library:apklib:4.1.0" level="project" />
-    <orderEntry type="library" name="Maven: com.google:feathercoinj:0.81-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.google:feathercoinj:0.93-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.2" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty:3.6.3.Final" level="project" />
     <orderEntry type="library" name="Maven: com.madgag:sc-light-jdk15on:1.47.0.2" level="project" />

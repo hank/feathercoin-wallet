@@ -215,5 +215,11 @@
 	<string name="time_today">today</string>
 	<string name="address_unlabeled">(unlabeled)</string>
     <string name="under_construction">Under Construction...</string>
+    <string name="warn_old_keys">Warning: Due to a Java vulnerability, your wallet contains potentially vulnerable
+        private keys! Please transfer your coins to a safe place (leave 0.01FTC in the wallet), delete all app data,
+        uninstall the app, then reinstall. This will generate a new key. Then, tranfer your coins from the safe place
+        back into the wallet if you wish. Sorry for the inconvenience!
+    </string>
+    <string name="warn_old_keys_title">WARNING: VULNERABLE KEYS!</string>
 
 </resources>

@@ -39,12 +39,9 @@ import java.util.List;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.content.DialogInterface;
+import android.content.*;
 import android.content.DialogInterface.OnCancelListener;
 import android.content.DialogInterface.OnClickListener;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 import android.net.Uri;
@@ -55,17 +52,10 @@ import android.preference.PreferenceManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.text.format.DateUtils;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
+import android.view.*;
 import android.webkit.WebView;
-import android.widget.AdapterView;
+import android.widget.*;
 import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.TextView;
 
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
@@ -109,6 +99,16 @@ public final class WalletActivity extends AbstractWalletActivity
 		checkAlerts();
 
 		touchLastUsed();
+
+        if(haveOldKeys())
+        {
+            // Warn user
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setIcon(android.R.drawable.ic_dialog_alert);
+            builder.setTitle(R.string.warn_old_keys_title);
+            builder.setMessage(getString(R.string.warn_old_keys));
+            builder.show();
+        }
 	}
 
 	@Override
@@ -504,6 +504,23 @@ public final class WalletActivity extends AbstractWalletActivity
 			button.setEnabled(hasFile && (!needsPassword || hasPassword));
 		}
 	}
+
+    private boolean haveOldKeys()
+    {
+        // Checks for vulnerable keys
+        final ArrayList<ECKey> keychain = wallet.keychain;
+        for (final ECKey key : keychain)
+        {
+            final long creationTime = key.getCreationTimeSeconds();
+            if(creationTime < 1376440000) //  Wed, 14 Aug 2013 00:26:40 GMT
+            {
+                return true;
+            }
+        }
+
+        // No old keys were found.  We assume that the new RNG was used.
+        return false;
+    }
 
 	private void checkLowStorageAlert()
 	{

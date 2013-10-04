@@ -42,6 +42,9 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.preference.PreferenceManager;
 import android.text.format.DateUtils;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.widget.PopupWindow;
 import android.widget.Toast;
 
 import com.google.feathercoin.core.Address;
@@ -53,6 +56,7 @@ import com.google.feathercoin.store.WalletProtobufSerializer;
 import de.schildbach.wallet.feathercoin.service.BlockchainService;
 import de.schildbach.wallet.feathercoin.service.BlockchainServiceImpl;
 import de.schildbach.wallet.feathercoin.util.CrashReporter;
+import de.schildbach.wallet.feathercoin.util.LinuxSecureRandom;
 import de.schildbach.wallet.feathercoin.util.StrictModeWrapper;
 import de.schildbach.wallet.feathercoin.util.WalletUtils;
 import de.schildbach.wallet.feathercoin.R;
@@ -75,6 +79,7 @@ public class WalletApplication extends Application
 	@Override
 	public void onCreate()
 	{
+        new LinuxSecureRandom();
 		try
 		{
 			StrictModeWrapper.init();
@@ -331,6 +336,7 @@ public class WalletApplication extends Application
 
 		Log.d(TAG, "wallet saved to: '" + walletFile + "', took " + (System.currentTimeMillis() - start) + "ms");
 	}
+
 
 	private void backupKeys()
 	{

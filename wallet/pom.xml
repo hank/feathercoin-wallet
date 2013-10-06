@@ -6,7 +6,7 @@
 
 	<artifactId>wallet</artifactId>
 	<packaging>apk</packaging>
-	<version>1.096</version>
+	<version>1.097</version>
 	<name>Feathercoin Wallet</name>
 
 	<parent>
@@ -53,7 +53,7 @@
 		<dependency>
 			<groupId>com.google</groupId>
 			<artifactId>feathercoinj</artifactId>
-			<version>0.94-SNAPSHOT</version>
+			<version>0.95-SNAPSHOT</version>
 		</dependency>
 
 		<!-- de.schildbach.wallet.feathercoin.integration.android.* -->

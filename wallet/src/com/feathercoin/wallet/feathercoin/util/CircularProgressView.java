@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.feathercoin.wallet.feathercoin.util;
+package com.feathercoin.wallet.util;
 
 import android.content.Context;
 import android.graphics.Canvas;

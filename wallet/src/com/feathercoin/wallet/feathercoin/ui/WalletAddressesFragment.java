@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -45,13 +45,13 @@ import com.google.feathercoin.core.Address;
 import com.google.feathercoin.core.ECKey;
 import com.google.feathercoin.uri.FeathercoinURI;
 
-import com.feathercoin.wallet.feathercoin.AddressBookProvider;
-import com.feathercoin.wallet.feathercoin.Constants;
-import com.feathercoin.wallet.feathercoin.DetermineFirstSeenThread;
-import com.feathercoin.wallet.feathercoin.WalletApplication;
-import com.feathercoin.wallet.feathercoin.util.BitmapFragment;
-import com.feathercoin.wallet.feathercoin.util.WalletUtils;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.AddressBookProvider;
+import com.feathercoin.wallet.Constants;
+import com.feathercoin.wallet.DetermineFirstSeenThread;
+import com.feathercoin.wallet.WalletApplication;
+import com.feathercoin.wallet.util.BitmapFragment;
+import com.feathercoin.wallet.util.WalletUtils;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach

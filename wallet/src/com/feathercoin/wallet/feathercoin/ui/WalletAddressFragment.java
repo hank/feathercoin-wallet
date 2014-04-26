@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -39,12 +39,12 @@ import android.widget.TextView;
 import com.google.feathercoin.core.Address;
 import com.google.feathercoin.uri.FeathercoinURI;
 
-import com.feathercoin.wallet.feathercoin.Constants;
-import com.feathercoin.wallet.feathercoin.WalletApplication;
-import com.feathercoin.wallet.feathercoin.util.BitmapFragment;
-import com.feathercoin.wallet.feathercoin.util.NfcTools;
-import com.feathercoin.wallet.feathercoin.util.WalletUtils;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.Constants;
+import com.feathercoin.wallet.WalletApplication;
+import com.feathercoin.wallet.util.BitmapFragment;
+import com.feathercoin.wallet.util.NfcTools;
+import com.feathercoin.wallet.util.WalletUtils;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach

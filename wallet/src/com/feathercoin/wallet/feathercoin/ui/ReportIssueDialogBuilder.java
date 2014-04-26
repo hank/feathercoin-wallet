@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -35,10 +35,10 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-import com.feathercoin.wallet.feathercoin.Constants;
-import com.feathercoin.wallet.feathercoin.util.CrashReporter;
-import com.feathercoin.wallet.feathercoin.util.WalletUtils;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.Constants;
+import com.feathercoin.wallet.util.CrashReporter;
+import com.feathercoin.wallet.util.WalletUtils;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach

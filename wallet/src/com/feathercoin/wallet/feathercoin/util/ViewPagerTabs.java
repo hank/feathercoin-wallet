@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.util;
+package com.feathercoin.wallet.util;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,7 +31,7 @@ import android.os.Parcelable;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.AttributeSet;
 import android.view.View;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach

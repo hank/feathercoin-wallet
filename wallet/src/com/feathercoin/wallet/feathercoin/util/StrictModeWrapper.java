@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.util;
+package com.feathercoin.wallet.util;
 
 import android.annotation.TargetApi;
 import android.os.Build;

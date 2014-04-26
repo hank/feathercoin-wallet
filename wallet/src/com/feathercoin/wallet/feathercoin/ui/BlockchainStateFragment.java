@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import java.util.Date;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -38,9 +38,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import com.feathercoin.wallet.feathercoin.Constants;
-import com.feathercoin.wallet.feathercoin.service.BlockchainService;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.Constants;
+import com.feathercoin.wallet.service.BlockchainService;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach

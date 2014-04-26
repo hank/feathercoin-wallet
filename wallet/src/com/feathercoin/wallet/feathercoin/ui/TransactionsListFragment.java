@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import java.math.BigInteger;
 import java.text.DateFormat;
@@ -59,12 +59,12 @@ import com.google.feathercoin.core.Transaction;
 import com.google.feathercoin.core.TransactionConfidence.ConfidenceType;
 import com.google.feathercoin.core.Wallet;
 
-import com.feathercoin.wallet.feathercoin.AddressBookProvider;
-import com.feathercoin.wallet.feathercoin.Constants;
-import com.feathercoin.wallet.feathercoin.WalletApplication;
-import com.feathercoin.wallet.feathercoin.util.ThrottelingWalletChangeListener;
-import com.feathercoin.wallet.feathercoin.util.WalletUtils;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.AddressBookProvider;
+import com.feathercoin.wallet.Constants;
+import com.feathercoin.wallet.WalletApplication;
+import com.feathercoin.wallet.util.ThrottelingWalletChangeListener;
+import com.feathercoin.wallet.util.WalletUtils;
+import com.feathercoin.wallet.R;
 import org.spongycastle.crypto.tls.TlsAgreementCredentials;
 
 /**

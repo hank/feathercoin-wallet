@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -38,11 +38,11 @@ import com.google.feathercoin.core.Transaction;
 import com.google.feathercoin.core.VerificationException;
 import com.google.feathercoin.core.Wallet;
 
-import com.feathercoin.wallet.feathercoin.Constants;
-import com.feathercoin.wallet.feathercoin.WalletApplication;
-import com.feathercoin.wallet.feathercoin.util.Base43;
-import com.feathercoin.wallet.feathercoin.util.NfcTools;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.Constants;
+import com.feathercoin.wallet.WalletApplication;
+import com.feathercoin.wallet.util.Base43;
+import com.feathercoin.wallet.util.NfcTools;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach

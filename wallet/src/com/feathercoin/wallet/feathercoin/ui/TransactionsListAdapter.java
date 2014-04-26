@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -43,11 +43,11 @@ import com.google.feathercoin.core.TransactionConfidence;
 import com.google.feathercoin.core.TransactionConfidence.ConfidenceType;
 import com.google.feathercoin.core.Wallet;
 
-import com.feathercoin.wallet.feathercoin.AddressBookProvider;
-import com.feathercoin.wallet.feathercoin.Constants;
-import com.feathercoin.wallet.feathercoin.util.CircularProgressView;
-import com.feathercoin.wallet.feathercoin.util.WalletUtils;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.AddressBookProvider;
+import com.feathercoin.wallet.Constants;
+import com.feathercoin.wallet.util.CircularProgressView;
+import com.feathercoin.wallet.util.WalletUtils;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach

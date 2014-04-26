@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.feathercoin.wallet.feathercoin.util;
+package com.feathercoin.wallet.util;
 
 import java.util.Collections;
 import java.util.SortedMap;

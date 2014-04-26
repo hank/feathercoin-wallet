@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -33,10 +33,10 @@ import android.widget.TextView;
 import com.google.feathercoin.core.Address;
 import com.google.feathercoin.core.ECKey;
 
-import com.feathercoin.wallet.feathercoin.AddressBookProvider;
-import com.feathercoin.wallet.feathercoin.Constants;
-import com.feathercoin.wallet.feathercoin.util.WalletUtils;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.AddressBookProvider;
+import com.feathercoin.wallet.Constants;
+import com.feathercoin.wallet.util.WalletUtils;
+import com.feathercoin.wallet.R;
 
 public class WalletAddressesAdapter extends BaseAdapter
 {

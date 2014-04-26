@@ -27,7 +27,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.feathercoin.wallet.feathercoin.integration.android.FeathercoinIntegration;
+import com.feathercoin.wallet.integration.android.FeathercoinIntegration;
 
 /**
  * @author Andreas Schildbach

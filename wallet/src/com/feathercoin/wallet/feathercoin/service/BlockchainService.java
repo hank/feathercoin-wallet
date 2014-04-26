@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.service;
+package com.feathercoin.wallet.service;
 
 import java.util.List;
 
@@ -23,7 +23,7 @@ import com.google.feathercoin.core.Peer;
 import com.google.feathercoin.core.StoredBlock;
 import com.google.feathercoin.core.Transaction;
 
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach

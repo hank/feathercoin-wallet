@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -25,9 +25,9 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.feathercoin.wallet.feathercoin.ui.TransactionsListFragment.Direction;
-import com.feathercoin.wallet.feathercoin.util.ViewPagerTabs;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.ui.TransactionsListFragment.Direction;
+import com.feathercoin.wallet.util.ViewPagerTabs;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach

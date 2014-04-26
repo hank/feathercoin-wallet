@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
-	package="com.feathercoin.wallet.feathercoin"
+	package="com.feathercoin.wallet"
 	android:installLocation="preferExternal"
-	android:versionCode="10017"
-	android:versionName="1.097" >
+	android:versionCode="10021"
+	android:versionName="1.021" >
 	<!--android:installLocation="preferExternal"-->
 	<!-- Change to auto to install on emulator -->
 
@@ -161,11 +161,11 @@
 
 		<provider
 			android:name=".AddressBookProvider"
-			android:authorities="com.feathercoin.wallet.feathercoin.address_book"
+			android:authorities="com.feathercoin.wallet.address_book"
 			android:exported="false" />
 		<provider
 			android:name=".ExchangeRatesProvider"
-			android:authorities="com.feathercoin.wallet.feathercoin.exchange_rates"
+			android:authorities="com.feathercoin.wallet.exchange_rates"
 			android:exported="false" />
 
 		<receiver

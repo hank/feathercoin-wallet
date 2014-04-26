@@ -10,7 +10,7 @@
 	<name>Feathercoin Wallet</name>
 
 	<parent>
-		<groupId>com.feathercoin.wallet.feathercoin</groupId>
+		<groupId>com.feathercoin.wallet</groupId>
 		<artifactId>base</artifactId>
 		<version>1</version>
 	</parent>
@@ -56,9 +56,9 @@
 			<version>0.96-SNAPSHOT</version>
 		</dependency>
 
-		<!-- com.feathercoin.wallet.feathercoin.integration.android.* -->
+		<!-- com.feathercoin.wallet.integration.android.* -->
 		<dependency>
-			<groupId>com.feathercoin.wallet.feathercoin</groupId>
+			<groupId>com.feathercoin.wallet</groupId>
 			<artifactId>integration-android</artifactId>
 			<version>1.0</version>
 		</dependency>
@@ -172,7 +172,8 @@
                             <include>${project.build.directory}/${project.artifactId}.apk</include>
                         </includes>
                         <keystore>${sign.keystore}</keystore>
-                        <alias>${sign.alias}</alias>
+                        <!-- <alias>${sign.alias}</alias> -->
+                        <alias>feathercoin</alias>
                         <storepass>${sign.storepass}</storepass>
                         <keypass>${sign.keypass}</keypass>
                         <verbose>true</verbose>

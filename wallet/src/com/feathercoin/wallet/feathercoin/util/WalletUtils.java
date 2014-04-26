@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.util;
+package com.feathercoin.wallet.util;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -63,7 +63,7 @@ import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 
-import com.feathercoin.wallet.feathercoin.Constants;
+import com.feathercoin.wallet.Constants;
 
 /**
  * @author Andreas Schildbach

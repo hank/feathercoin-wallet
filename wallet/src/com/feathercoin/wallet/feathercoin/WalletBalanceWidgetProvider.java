@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin;
+package com.feathercoin.wallet;
 
 import java.math.BigInteger;
 
@@ -33,11 +33,11 @@ import android.widget.RemoteViews;
 import com.google.feathercoin.core.Wallet;
 import com.google.feathercoin.core.Wallet.BalanceType;
 
-import com.feathercoin.wallet.feathercoin.ui.RequestCoinsActivity;
-import com.feathercoin.wallet.feathercoin.ui.SendCoinsActivity;
-import com.feathercoin.wallet.feathercoin.ui.WalletActivity;
-import com.feathercoin.wallet.feathercoin.util.WalletUtils;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.ui.RequestCoinsActivity;
+import com.feathercoin.wallet.ui.SendCoinsActivity;
+import com.feathercoin.wallet.ui.WalletActivity;
+import com.feathercoin.wallet.util.WalletUtils;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach

@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -33,7 +33,7 @@ import android.view.View;
 
 import com.google.zxing.ResultPoint;
 
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.R;
 
 /**
  * @author Andreas Schildbach

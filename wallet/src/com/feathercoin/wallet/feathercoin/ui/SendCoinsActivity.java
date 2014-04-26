@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.feathercoin.wallet.feathercoin.ui;
+package com.feathercoin.wallet.ui;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -29,7 +29,7 @@ import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
 import com.google.feathercoin.uri.FeathercoinURI;
 import com.google.feathercoin.uri.FeathercoinURIParseException;
-import com.feathercoin.wallet.feathercoin.R;
+import com.feathercoin.wallet.R;
 
 import java.math.BigInteger;
 

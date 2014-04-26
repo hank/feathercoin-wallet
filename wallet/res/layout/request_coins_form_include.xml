@@ -15,7 +15,7 @@
 		android:textSize="@dimen/font_size_normal"
 		android:textStyle="bold" />
 
-	<com.feathercoin.wallet.feathercoin.ui.CurrencyAmountView
+	<com.feathercoin.wallet.ui.CurrencyAmountView
 		android:id="@+id/request_coins_amount"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
 			android:imeOptions="flagNoExtractUi"
 			android:textSize="@dimen/font_size_xlarge"
 			tools:ignore="TextFields" />
-	</com.feathercoin.wallet.feathercoin.ui.CurrencyAmountView>
+	</com.feathercoin.wallet.ui.CurrencyAmountView>
 
 	<TextView
 		android:layout_width="match_parent"

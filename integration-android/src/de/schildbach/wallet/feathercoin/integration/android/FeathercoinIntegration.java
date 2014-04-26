@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.feathercoin.wallet.feathercoin.integration.android;
+package com.feathercoin.wallet.integration.android;
 
 import android.app.Activity;
 import android.content.Context;

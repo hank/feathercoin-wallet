@@ -10,7 +10,7 @@
 	<name>Sample for Feathercoin Integration for Android</name>
 
 	<parent>
-		<groupId>de.schildbach.wallet.feathercoin</groupId>
+		<groupId>com.feathercoin.wallet.feathercoin</groupId>
 		<artifactId>base</artifactId>
 		<version>1</version>
 	</parent>
@@ -25,9 +25,9 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- de.schildbach.wallet.feathercoin.integration.android.* -->
+		<!-- com.feathercoin.wallet.feathercoin.integration.android.* -->
 		<dependency>
-			<groupId>de.schildbach.wallet.feathercoin</groupId>
+			<groupId>com.feathercoin.wallet.feathercoin</groupId>
 			<artifactId>integration-android</artifactId>
 			<version>1.0</version>
 		</dependency>

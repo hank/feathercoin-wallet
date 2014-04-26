@@ -9,7 +9,7 @@
 	<name>Feathercoin Integration for Android</name>
 
 	<parent>
-		<groupId>de.schildbach.wallet.feathercoin</groupId>
+		<groupId>com.feathercoin.wallet.feathercoin</groupId>
 		<artifactId>base</artifactId>
 		<version>1</version>
 	</parent>

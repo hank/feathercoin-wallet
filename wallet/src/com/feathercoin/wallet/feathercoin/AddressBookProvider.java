@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin;
+package com.feathercoin.wallet.feathercoin;
 
 import java.util.List;
 

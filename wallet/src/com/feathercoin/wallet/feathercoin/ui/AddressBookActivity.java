@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin.ui;
+package com.feathercoin.wallet.feathercoin.ui;
 
 import java.util.ArrayList;
 
@@ -32,9 +32,9 @@ import com.actionbarsherlock.view.MenuItem;
 import com.google.feathercoin.core.Address;
 import com.google.feathercoin.core.ECKey;
 
-import de.schildbach.wallet.feathercoin.Constants;
-import de.schildbach.wallet.feathercoin.util.ViewPagerTabs;
-import de.schildbach.wallet.feathercoin.R;
+import com.feathercoin.wallet.feathercoin.Constants;
+import com.feathercoin.wallet.feathercoin.util.ViewPagerTabs;
+import com.feathercoin.wallet.feathercoin.R;
 
 /**
  * @author Andreas Schildbach

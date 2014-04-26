@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin.ui;
+package com.feathercoin.wallet.feathercoin.ui;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -30,10 +30,10 @@ import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
-import de.schildbach.wallet.feathercoin.AddressBookProvider;
-import de.schildbach.wallet.feathercoin.Constants;
-import de.schildbach.wallet.feathercoin.util.WalletUtils;
-import de.schildbach.wallet.feathercoin.R;
+import com.feathercoin.wallet.feathercoin.AddressBookProvider;
+import com.feathercoin.wallet.feathercoin.Constants;
+import com.feathercoin.wallet.feathercoin.util.WalletUtils;
+import com.feathercoin.wallet.feathercoin.R;
 
 /**
  * @author Andreas Schildbach

@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin.ui;
+package com.feathercoin.wallet.feathercoin.ui;
 
 import java.math.BigInteger;
 
@@ -72,14 +72,14 @@ import com.google.feathercoin.core.Wallet.SendRequest;
 import com.google.feathercoin.uri.FeathercoinURI;
 import com.google.feathercoin.uri.FeathercoinURIParseException;
 
-import de.schildbach.wallet.feathercoin.AddressBookProvider;
-import de.schildbach.wallet.feathercoin.Constants;
-import de.schildbach.wallet.feathercoin.WalletApplication;
-import de.schildbach.wallet.feathercoin.integration.android.FeathercoinIntegration;
-import de.schildbach.wallet.feathercoin.service.BlockchainService;
-import de.schildbach.wallet.feathercoin.service.BlockchainServiceImpl;
-import de.schildbach.wallet.feathercoin.util.WalletUtils;
-import de.schildbach.wallet.feathercoin.R;
+import com.feathercoin.wallet.feathercoin.AddressBookProvider;
+import com.feathercoin.wallet.feathercoin.Constants;
+import com.feathercoin.wallet.feathercoin.WalletApplication;
+import com.feathercoin.wallet.feathercoin.integration.android.FeathercoinIntegration;
+import com.feathercoin.wallet.feathercoin.service.BlockchainService;
+import com.feathercoin.wallet.feathercoin.service.BlockchainServiceImpl;
+import com.feathercoin.wallet.feathercoin.util.WalletUtils;
+import com.feathercoin.wallet.feathercoin.R;
 
 /**
  * @author Andreas Schildbach

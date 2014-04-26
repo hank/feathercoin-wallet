@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin.service;
+package com.feathercoin.wallet.feathercoin.service;
 
 import java.io.*;
 import java.math.BigInteger;
@@ -66,13 +66,13 @@ import com.google.feathercoin.store.BlockStore;
 import com.google.feathercoin.store.BlockStoreException;
 
 import com.google.feathercoin.store.SPVBlockStore;
-import de.schildbach.wallet.feathercoin.Constants;
-import de.schildbach.wallet.feathercoin.WalletApplication;
-import de.schildbach.wallet.feathercoin.WalletBalanceWidgetProvider;
-import de.schildbach.wallet.feathercoin.ui.WalletActivity;
-import de.schildbach.wallet.feathercoin.util.ThrottelingWalletChangeListener;
-import de.schildbach.wallet.feathercoin.util.WalletUtils;
-import de.schildbach.wallet.feathercoin.R;
+import com.feathercoin.wallet.feathercoin.Constants;
+import com.feathercoin.wallet.feathercoin.WalletApplication;
+import com.feathercoin.wallet.feathercoin.WalletBalanceWidgetProvider;
+import com.feathercoin.wallet.feathercoin.ui.WalletActivity;
+import com.feathercoin.wallet.feathercoin.util.ThrottelingWalletChangeListener;
+import com.feathercoin.wallet.feathercoin.util.WalletUtils;
+import com.feathercoin.wallet.feathercoin.R;
 
 /**
  * @author Andreas Schildbach

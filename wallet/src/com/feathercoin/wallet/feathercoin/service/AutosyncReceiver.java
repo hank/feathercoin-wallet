@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin.service;
+package com.feathercoin.wallet.feathercoin.service;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -27,7 +27,7 @@ import android.content.SharedPreferences;
 import android.os.BatteryManager;
 import android.preference.PreferenceManager;
 import android.util.Log;
-import de.schildbach.wallet.feathercoin.Constants;
+import com.feathercoin.wallet.feathercoin.Constants;
 
 /**
  * @author Andreas Schildbach

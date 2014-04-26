@@ -15,10 +15,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin.camera;
+package com.feathercoin.wallet.feathercoin.camera;
 
 import android.os.Build;
-import de.schildbach.wallet.feathercoin.util.PlatformSupportManager;
+import com.feathercoin.wallet.feathercoin.util.PlatformSupportManager;
 
 /**
  * @author Andreas Schildbach
@@ -29,6 +29,6 @@ public class CameraSupportManager extends PlatformSupportManager<CameraInterface
 	{
 		super(CameraInterface.class, new DefaultCameraInterface());
 
-		//addImplementationClass(Build.VERSION_CODES.GINGERBREAD, "de.schildbach.wallet.feathercoin.camera.GingerbreadCameraInterface");
+		//addImplementationClass(Build.VERSION_CODES.GINGERBREAD, "com.feathercoin.wallet.feathercoin.camera.GingerbreadCameraInterface");
 	}
 }

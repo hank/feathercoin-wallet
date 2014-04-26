@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin;
+package com.feathercoin.wallet.feathercoin;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -47,7 +47,7 @@ import android.text.format.DateUtils;
 
 import com.google.feathercoin.core.Utils;
 
-import de.schildbach.wallet.feathercoin.util.IOUtils;
+import com.feathercoin.wallet.feathercoin.util.IOUtils;
 
 /**
  * @author Andreas Schildbach

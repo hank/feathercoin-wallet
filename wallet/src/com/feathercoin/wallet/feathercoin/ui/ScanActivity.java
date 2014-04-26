@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin.ui;
+package com.feathercoin.wallet.feathercoin.ui;
 
 import java.io.IOException;
 import java.util.EnumMap;
@@ -54,8 +54,8 @@ import com.google.zxing.ResultPointCallback;
 import com.google.zxing.common.HybridBinarizer;
 import com.google.zxing.qrcode.QRCodeReader;
 
-import de.schildbach.wallet.feathercoin.camera.CameraManager;
-import de.schildbach.wallet.feathercoin.R;
+import com.feathercoin.wallet.feathercoin.camera.CameraManager;
+import com.feathercoin.wallet.feathercoin.R;
 
 /**
  * @author Andreas Schildbach

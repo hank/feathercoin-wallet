@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin.util;
+package com.feathercoin.wallet.feathercoin.util;
 
 import java.nio.charset.Charset;
 import java.util.Arrays;

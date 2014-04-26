@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin.ui;
+package com.feathercoin.wallet.feathercoin.ui;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -62,13 +62,13 @@ import com.actionbarsherlock.view.MenuItem;
 import com.google.feathercoin.core.ECKey;
 import com.google.feathercoin.core.Wallet;
 
-import de.schildbach.wallet.feathercoin.Constants;
-import de.schildbach.wallet.feathercoin.WalletApplication;
-import de.schildbach.wallet.feathercoin.util.CrashReporter;
-import de.schildbach.wallet.feathercoin.util.EncryptionUtils;
-import de.schildbach.wallet.feathercoin.util.Iso8601Format;
-import de.schildbach.wallet.feathercoin.util.WalletUtils;
-import de.schildbach.wallet.feathercoin.R;
+import com.feathercoin.wallet.feathercoin.Constants;
+import com.feathercoin.wallet.feathercoin.WalletApplication;
+import com.feathercoin.wallet.feathercoin.util.CrashReporter;
+import com.feathercoin.wallet.feathercoin.util.EncryptionUtils;
+import com.feathercoin.wallet.feathercoin.util.Iso8601Format;
+import com.feathercoin.wallet.feathercoin.util.WalletUtils;
+import com.feathercoin.wallet.feathercoin.R;
 
 /**
  * @author Andreas Schildbach

@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package de.schildbach.wallet.feathercoin;
+package com.feathercoin.wallet.feathercoin;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -53,13 +53,13 @@ import com.google.feathercoin.core.Wallet;
 import com.google.feathercoin.core.Wallet.AutosaveEventListener;
 import com.google.feathercoin.store.WalletProtobufSerializer;
 
-import de.schildbach.wallet.feathercoin.service.BlockchainService;
-import de.schildbach.wallet.feathercoin.service.BlockchainServiceImpl;
-import de.schildbach.wallet.feathercoin.util.CrashReporter;
-import de.schildbach.wallet.feathercoin.util.LinuxSecureRandom;
-import de.schildbach.wallet.feathercoin.util.StrictModeWrapper;
-import de.schildbach.wallet.feathercoin.util.WalletUtils;
-import de.schildbach.wallet.feathercoin.R;
+import com.feathercoin.wallet.feathercoin.service.BlockchainService;
+import com.feathercoin.wallet.feathercoin.service.BlockchainServiceImpl;
+import com.feathercoin.wallet.feathercoin.util.CrashReporter;
+import com.feathercoin.wallet.feathercoin.util.LinuxSecureRandom;
+import com.feathercoin.wallet.feathercoin.util.StrictModeWrapper;
+import com.feathercoin.wallet.feathercoin.util.WalletUtils;
+import com.feathercoin.wallet.feathercoin.R;
 
 /**
  * @author Andreas Schildbach

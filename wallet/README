@@ -8,10 +8,10 @@ FILES
 
 Your wallet and your private keys are stored in app internal storage:
 
-/data/data/de.schildbach.wallet/files/wallet-protobuf (MODE_PRIVATE)
+/data/data/com.feathercoin.wallet/files/wallet-protobuf (MODE_PRIVATE)
 	Wallet for prodnet
 
-/data/data/de.schildbach.wallet_test/files/wallet-protobuf-testnet (MODE_WORLD_READABLE | MODE_WORLD_WRITEABLE)
+/data/data/com.feathercoin.wallet_test/files/wallet-protobuf-testnet (MODE_WORLD_READABLE | MODE_WORLD_WRITEABLE)
 	Wallet for testnet
 
 The wallet file format is not compatible to wallet.dat (Satoshi client). Rather, it uses a custom protobuf format
@@ -19,10 +19,10 @@ which should be compatible between clients using litecoinj.
 
 Certain actions cause rolling backups of your private keys to app internal storage:
 
-/data/data/de.schildbach.wallet/files/key-backup-base58 (MODE_PRIVATE)
+/data/data/com.feathercoin.wallet/files/key-backup-base58 (MODE_PRIVATE)
 	Backups of private keys for prodnet
 
-/data/data/de.schildbach.wallet_test/files/key-backup-base58-testnet (MODE_PRIVATE)
+/data/data/com.feathercoin.wallet_test/files/key-backup-base58-testnet (MODE_PRIVATE)
 	Backups of private keys for testnet
 
 Private keys can be exported to and imported from external storage:
@@ -42,7 +42,7 @@ DEBUGGING
 
 Wallet file for testnet can be pulled from (even unrooted) device using
 
-	adb pull /data/data/de.schildbach.wallet_test/files/wallet-protobuf-testnet
+	adb pull /data/data/com.feathercoin.wallet_test/files/wallet-protobuf-testnet
 
 Log messages can be viewed by
 
@@ -68,17 +68,17 @@ and unpack it to your workspace directory. Switch to that Android SDK directory,
 
 to download the necessary API level.
 
-Next, you need to build feathercoinj. In your workspace, use
+Next, you need to build litecoinj. In your workspace, use
 
-	git clone https://github.com/wellenreiter01/feathercoinj.git
-	cd feathercoinj
+	git clone -b release-0.7 https://code.google.com/p/litecoinj/ litecoinj
+	cd litecoinj
 	mvn clean install
 
 Finally, you can build Feathercoin Wallet and sign it with your development key. Again in your workspace,
 use
 
-	git clone https://github.com/wellenreiter01/feathercoin-wallet-2.git feathercoin-wallet
-	cd feathercoin-wallet
+	git clone https://code.google.com/p/litecoin-wallet/ litecoin-wallet
+	cd litecoin-wallet
 	mvn clean install -Dandroid.sdk.path=<path to your android sdk>
 
 To upload the app to your Android device, use
@@ -94,7 +94,7 @@ Make sure you've got Eclipse 3.7 (Indigo) with ADT 20 installed.
 
 Use Git to check out the project to your workspace:
 
-  git clone https://github.com/wellenreiter01/feathercoin-wallet-2.git feathercoin-wallet
+  git clone https://code.google.com/p/litecoin-wallet/ litecoin-wallet
 
 Change to that directory.
 
@@ -164,8 +164,6 @@ The feed is described here:
 
 LITECOINJ
 
-Feathercoin Wallet uses feathercoinj for Feathercoin specific logic:
+Feathercoin Wallet uses litecoinj for Feathercoin specific logic:
 
-
-https://github.com/wellenreiter01/feathercoinj.git
-
+http://code.google.com/p/litecoinj/

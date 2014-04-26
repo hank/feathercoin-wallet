@@ -99,19 +99,19 @@ public class Constants
 	public static final int FTC_PRECISION = 8;
 	public static final int LOCAL_PRECISION = 4;
 
-	public static final String DONATION_ADDRESS = "6xZLkkeMF5mXrfiM5g4yR5153e4QVfaSeF";
-	public static final String REPORT_EMAIL = "ralree@gmail.com";
+	public static final String DONATION_ADDRESS = "6p8u3wtct7uxRGmvWr2xvPxqRzbpbcd82A";
+	public static final String REPORT_EMAIL = "wellenreiter168@gmail.com";
 	public static final String REPORT_SUBJECT_ISSUE = "Reported issue";
 	public static final String REPORT_SUBJECT_CRASH = "Crash report";
 
 	public static final String LICENSE_URL = "http://www.gnu.org/licenses/gpl-3.0.txt";
-	public static final String SOURCE_URL = "https://github.com/hank/feathercoin-wallet";
-	public static final String BINARY_URL = "https://github.com/hank/feathercoin-wallet";
+	public static final String SOURCE_URL = "https://github.com/wellenreiter01/feather-wallet";
+	public static final String BINARY_URL = "https://github.com/wellenreiter01/feather-wallet";
 	public static final String CREDITS_LITECOINJ_URL = "http://code.google.com/p/feathercoinj/";
 	public static final String CREDITS_ZXING_URL = "http://code.google.com/p/zxing/";
 	public static final String CREDITS_ICON_URL = "https://bitcointalk.org/index.php?topic=181443.msg1928890#msg1928890";
-	public static final String AUTHOR_TWITTER_URL = "https://twitter.com/#!/bitcoins4life";
-	public static final String AUTHOR_GOOGLEPLUS_URL = "https://profiles.google.com/hardware.hank";
+	public static final String AUTHOR_TWITTER_URL = "";
+	public static final String AUTHOR_GOOGLEPLUS_URL = "";
 	public static final String MARKET_APP_URL = "market://details?id=%s";
 	public static final String WEBMARKET_APP_URL = "https://play.google.com/store/apps/details?id=%s";
 	public static final String MARKET_PUBLISHER_URL = "market://search?q=pub:\"Joint Security Area\"";
@@ -133,7 +133,7 @@ public class Constants
 	public static final String PREFS_KEY_LABS_SEND_COINS_LOW_FEE = "labs_send_coins_low_fee";
 	public static final String PREFS_KEY_LABS_TRANSACTION_DETAILS = "labs_transactions_details";
 	public static final String PREFS_KEY_LABS_BLOCK_EXPLORER = "labs_block_explorer";
-	public static final String PREFS_KEY_FTC_PRECISION = "ltc_precision";
+	public static final String PREFS_KEY_FTC_PRECISION = "ftc_precision";
 	public static final String PREFS_KEY_DISCLAIMER = "disclaimer";
 
 	public static final BigInteger DEFAULT_TX_FEE = Utils.CENT; // 0.01

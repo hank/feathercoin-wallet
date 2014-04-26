@@ -68,17 +68,17 @@ and unpack it to your workspace directory. Switch to that Android SDK directory,
 
 to download the necessary API level.
 
-Next, you need to build litecoinj. In your workspace, use
+Next, you need to build feathercoinj. In your workspace, use
 
-	git clone -b release-0.7 https://code.google.com/p/litecoinj/ litecoinj
-	cd litecoinj
+	git clone https://github.com/wellenreiter01/feathercoinj.git
+	cd feathercoinj
 	mvn clean install
 
 Finally, you can build Feathercoin Wallet and sign it with your development key. Again in your workspace,
 use
 
-	git clone https://code.google.com/p/litecoin-wallet/ litecoin-wallet
-	cd litecoin-wallet
+	git clone https://github.com/wellenreiter01/feathercoin-wallet-2.git feathercoin-wallet
+	cd feathercoin-wallet
 	mvn clean install -Dandroid.sdk.path=<path to your android sdk>
 
 To upload the app to your Android device, use
@@ -94,7 +94,7 @@ Make sure you've got Eclipse 3.7 (Indigo) with ADT 20 installed.
 
 Use Git to check out the project to your workspace:
 
-  git clone https://code.google.com/p/litecoin-wallet/ litecoin-wallet
+  git clone https://github.com/wellenreiter01/feathercoin-wallet-2.git feathercoin-wallet
 
 Change to that directory.
 
@@ -164,6 +164,8 @@ The feed is described here:
 
 LITECOINJ
 
-Feathercoin Wallet uses litecoinj for Feathercoin specific logic:
+Feathercoin Wallet uses feathercoinj for Feathercoin specific logic:
 
-http://code.google.com/p/litecoinj/
+
+https://github.com/wellenreiter01/feathercoinj.git
+

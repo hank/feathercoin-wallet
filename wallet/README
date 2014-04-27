@@ -8,10 +8,10 @@ FILES
 
 Your wallet and your private keys are stored in app internal storage:
 
-/data/data/de.schildbach.wallet/files/wallet-protobuf (MODE_PRIVATE)
+/data/data/com.feathercoin.wallet/files/wallet-protobuf (MODE_PRIVATE)
 	Wallet for prodnet
 
-/data/data/de.schildbach.wallet_test/files/wallet-protobuf-testnet (MODE_WORLD_READABLE | MODE_WORLD_WRITEABLE)
+/data/data/com.feathercoin.wallet_test/files/wallet-protobuf-testnet (MODE_WORLD_READABLE | MODE_WORLD_WRITEABLE)
 	Wallet for testnet
 
 The wallet file format is not compatible to wallet.dat (Satoshi client). Rather, it uses a custom protobuf format
@@ -19,10 +19,10 @@ which should be compatible between clients using litecoinj.
 
 Certain actions cause rolling backups of your private keys to app internal storage:
 
-/data/data/de.schildbach.wallet/files/key-backup-base58 (MODE_PRIVATE)
+/data/data/com.feathercoin.wallet/files/key-backup-base58 (MODE_PRIVATE)
 	Backups of private keys for prodnet
 
-/data/data/de.schildbach.wallet_test/files/key-backup-base58-testnet (MODE_PRIVATE)
+/data/data/com.feathercoin.wallet_test/files/key-backup-base58-testnet (MODE_PRIVATE)
 	Backups of private keys for testnet
 
 Private keys can be exported to and imported from external storage:
@@ -42,7 +42,7 @@ DEBUGGING
 
 Wallet file for testnet can be pulled from (even unrooted) device using
 
-	adb pull /data/data/de.schildbach.wallet_test/files/wallet-protobuf-testnet
+	adb pull /data/data/com.feathercoin.wallet_test/files/wallet-protobuf-testnet
 
 Log messages can be viewed by
 

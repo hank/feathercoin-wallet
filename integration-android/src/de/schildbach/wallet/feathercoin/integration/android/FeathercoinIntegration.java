@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package de.schildbach.wallet.feathercoin.integration.android;
+package com.feathercoin.wallet.integration.android;
 
 import android.app.Activity;
 import android.content.Context;
@@ -173,7 +173,7 @@ public final class FeathercoinIntegration
 	{
 		Toast.makeText(context, "No Feathercoin application found.\nPlease install Feathercoin Wallet.", Toast.LENGTH_LONG).show();
 
-		final Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=de.schildbach.wallet"));
+		final Intent marketIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.feathercoin.wallet"));
 		final Intent binaryIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://code.google.com/p/feathercoin-wallet/downloads/list"));
 
 		final PackageManager pm = context.getPackageManager();
